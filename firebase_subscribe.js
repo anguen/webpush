@@ -18,7 +18,7 @@ if ('Notification' in window) {
     // и подписываем его
     $('#kekus').on('click', function () {
         console.warn('keks')
-        // subscribe();
+        subscribe();
     });
 }
 
