@@ -1,4 +1,4 @@
-// firebase_subscribe.js
+// app.js
 firebase.initializeApp({
     messagingSenderId: '27232774409'
 });
@@ -16,10 +16,17 @@ if ('Notification' in window) {
 
     // по клику, запрашиваем у пользователя разрешение на уведомления
     // и подписываем его
-    $('#kekus').on('click', function () {
+    $('.jq-dekstop-webpush').on('click', function () {
         console.warn('keks')
-        subscribe();
+        var kek = new Notification('asdasdas');
+        kek();
     });
+    // и подписываем его
+    /*$('.unsubscribe').on('click', function () {
+        console.warn('unsubscribe')
+        unsubscribe();
+    });*/
+    
 }
 
 function subscribe() {
